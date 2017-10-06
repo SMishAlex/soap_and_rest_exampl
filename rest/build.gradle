@@ -1,0 +1,46 @@
+group 'edu.leti.web-example.service'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile 'org.slf4j:slf4j-api:1.7.25',
+            'ch.qos.logback:logback-core:1.2.3',
+            'ch.qos.logback:logback-classic:1.2.3',
+            'javax.servlet:javax.servlet-api:3.1.0',
+            'javax.servlet:jstl:1.2',
+            'com.fasterxml.jackson.core:jackson-core:2.8.9',
+            'com.fasterxml.jackson.core:jackson-databind:2.8.9',
+            'com.fasterxml.jackson.core:jackson-annotations:2.8.9',
+            'org.thymeleaf:thymeleaf:3.0.6.RELEASE',
+            'org.thymeleaf:thymeleaf-spring4:3.0.6.RELEASE',
+            'org.springframework.data:spring-data-jpa:1.11.4.RELEASE',
+            'org.postgresql:postgresql:42.1.1',
+            'postgresql:postgresql:9.0-801.jdbc4',
+            'org.hibernate:hibernate-entitymanager:5.2.10.Final',
+            'org.springframework.security:spring-security-core:4.2.3.RELEASE',
+            'org.springframework.security:spring-security-web:4.2.3.RELEASE',
+            'org.springframework.security:spring-security-config:4.2.3.RELEASE',
+            /* swagger */
+            'io.springfox:springfox-swagger2:2.7.0',
+            'io.springfox:springfox-swagger-ui:2.7.0',
+            //SSO
+            'javax.servlet.jsp:jsp-api:2.2',
+            'org.springframework:spring-context:4.0.5.RELEASE',
+            'org.apache.taglibs:taglibs-standard-jstlel:1.2.1',
+            'org.springframework.security.oauth:spring-security-oauth2:2.1.1.RELEASE',
+            'org.springframework.security:spring-security-jwt:1.0.8.RELEASE',
+            'org.apache.httpcomponents:httpclient:4.5.2'
+
+
+    compileOnly 'org.projectlombok:lombok:1.16.16'
+}

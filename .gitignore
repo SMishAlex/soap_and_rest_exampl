@@ -1,0 +1,12 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+/rest/out/
+/rest/build/
+/soap/service/build/
+/soap/client/out/
+/soap/service/out/
+/out/
+/.gradle/
