@@ -27,6 +27,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         this.applicationContext = applicationContext;
     }
 
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         if (!registry.hasMappingForPattern("/static/**")) {
@@ -83,4 +84,5 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         resolver.setTemplateMode(TemplateMode.HTML);
         return resolver;
     }
+
 }
