@@ -1,3 +1,4 @@
+import soap.TimeService;
 import soap.TimeServiceImpl;
 
 import javax.xml.ws.Endpoint;
@@ -13,7 +14,8 @@ public class Exporter {
      * @param args
      */
     public static void main(String[] args) {
+        TimeService timeService = new TimeServiceImpl();
         Endpoint.publish("http://localhost:8080/some",
-                new TimeServiceImpl());
+                timeService);
     }
 }

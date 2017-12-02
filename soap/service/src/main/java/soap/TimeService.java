@@ -1,9 +1,12 @@
 package soap;
 
+import javax.jws.WebMethod;
 import java.util.Date;
 
 public interface TimeService {
-    public Date getCurrentDate();
+    @WebMethod
+    Date getCurrentDate();
 
-    public Date getDateAfterFewDays(Integer days);
+    @WebMethod
+    Date getDateAfterFewDays(Integer days);
 }

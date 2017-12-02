@@ -1,6 +1,6 @@
 rootProject.name = 'soap_and_rest_example'
 include 'soap'
-include 'rest'
-include 'soap:client'
 include 'soap:service'
+include 'soap:client'
+include 'rest'
 
